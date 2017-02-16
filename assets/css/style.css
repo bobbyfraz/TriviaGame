@@ -16,5 +16,7 @@ footer{
 	background-color: #dc143c;
 }
 #results{
-	background-color: yellow;
+	background-color: #e6e600;
 }
+
+#q1a1, #q1a2, #q1a3, #q1a4, #q2a1, #q2a2, #q2a3, #q2a4, #q3a1, #q3a2, #q3a3, #q3a4, #q4a1, #q4a2, #q4a3, #q4a4, #q5a1, #q5a2, #q5a3, #q5a4:focus{color: #ffffff; background-color: #0000e6;}

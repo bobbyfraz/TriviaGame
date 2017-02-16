@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>Super Hero Trivia!!</title>
-	<link rel="stylesheet" type="text/css" href="assets/css/style.cs">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
 </head>
@@ -15,53 +15,58 @@
 	<h3>You will have 120 seconds to answer the trivia questions about various super heros.  After you are done or after the timer runs out your answers will be counted and you will be given your final score.</h3>
 	<br>
 	<h3><button id="startButton" class="btn btn-default">Start!</button></h3>
+
 	<h3 id="timer"></h3>
 	<section id="trivia">
-		<h4 id="batman"></h4>
-			<h5 id="q1"></h5>
-				<div class="incorrectAnswer" id="q1a1"></div>
-				<div class="incorrectAnswer" id="q1a2"></div>
-				<div class="correctAnswer" id="q1a3"></div>
-				<div class="incorrectAnswer" id="q1a4"></div>
+		<h4 id="batman">1. Batman!</h4>
+			<h4 id="q1">What is Batman's alter ego?</h4>
+				<button class="incorrectAnswer" class="btn btn-default" id="q1a1">A.  Bruce Banner</button>
+				<button class="incorrectAnswer" class="btn btn-default" id="q1a2">B.  Tony Stark</button>
+				<button class="correctAnswer" class="btn btn-default" id="q1a3">C.  Bruce Wayne</button>
+				<button class="incorrectAnswer" class="btn btn-default" id="q1a4">D.  Steve Rogerss</button>
 		<br>
-		<h4 id="captainamerica"></h4>
-			<h5 id="q2"></h5>
-				<div class="incorrectAnswer" id="q2a1"></div>
-				<div class="correctAnswer" id="q2a2"></div>
-				<div class="incorrectAnswer" id="q2a3"></div>
-				<div class="incorrectAnswer" id="q2a4"></div>
+		<h4 id="captainamerica">2. Captain America!</h4>
+			<h4 id="q2">What year did Captain America receive his abilities?</h4>
+				<button class="incorrectAnswer" class="btn btn-default" id="q2a1">A.  1939</button>
+				<button class="correctAnswer" class="btn btn-default" id="q2a2">B.  1941</button>
+				<button class="incorrectAnswer" class="btn btn-default" id="q2a3">C.  1943</button>
+				<button class="incorrectAnswer" class="btn btn-default" id="q2a4">D.  1945</button>
 		<br>
-		<h4 id="ironman"></h4>
-			<h5 id="q3"></h5>
-				<div class="incorrectAnswer" id="q3a1"></div>
-				<div class="incorrectAnswer" id="q3a2"></div>
-				<div class="incorrectAnswer" id="q3a3"></div>
-				<div class="correctAnswer" id="q3a4"></div>
+		<h4 id="ironman">3. Iron Man!</h4>
+			<h4 id="q3">Where did Iron Man go to college?</h4>
+				<button class="incorrectAnswer" class="btn btn-default" id="q3a1">A.  Harvard University</button>
+				<button class="incorrectAnswer" class="btn btn-default" id="q3a2">B.  Stanford University</button>
+				<button class="incorrectAnswer" class="btn btn-default" id="q3a3">C.  Princeton University</button>
+				<button class="correctAnswer" class="btn btn-default" id="q3a4">D.  M.I.T.</button>
 		<br>
-		<h4 id="wolverine"></h4>
-			<h5 id="q4"></h5>
-				<div class="correctAnswer" id="q4a1"></div>
-				<div class="incorrectAnswer" id="q4a2"></div>
-				<div class="incorrectAnswer" id="q4a3"></div>
-				<div class="incorrectAnswer" id="q4a4"></div>
+		<h4 id="wolverine">4. Wolverine!</h4>
+			<h4 id="q4">What type of metal is Wolverine's skeleton and claws made out of?</h4>
+				<button class="correctAnswer" class="btn btn-default" id="q4a1">A.  Adamantium</button>
+				<button class="incorrectAnswer" class="btn btn-default" id="q4a2">B.  Aluminum</button>
+				<button class="incorrectAnswer" class="btn btn-default" id="q4a3">C.  Iron</button>
+				<button class="incorrectAnswer" class="btn btn-default" id="q4a4">D.  Steel</button>
 		<br>
-		<h4 id="spyderman"></h4>
-			<h5 id="q5"></h5>
-				<div class="incorrectAnswer" id="q5a1"></div>
-				<div class="incorrectAnswer" id="q5a2"></div>
-				<div class="correctAnswer" id="q5a3"></div>
-				<div class="incorrectAnswer" id="q5a4"></div>
-		<br>
+		<h4 id="spyderman">5. Styderman!</h4>
+			<h4 id="q5">What city is Spyderman from?</h4>
+				<button class="incorrectAnswer" class="btn btn-default" id="q5a1">A.  Brooklyn</button>
+				<button class="incorrectAnswer" class="btn btn-default" id="q5a2">B.  Bronx</button>
+				<button class="correctAnswer" class="btn btn-default" id="q5a3">C.  Queens</button>
+				<button class="incorrectAnswer" class="btn btn-default" id="q5a4">D.  Manhattan</button>
 	</section>
+	<h3><button id="submitButton" class="btn btn-default">Submit!</button></h3>
+
 	<section id="results">
-		<h4 id="done"></h4>
+		<h4 id="done">ALL DONE!!!</h4>
+		<hr>
 		<h4 id="correct"></h4>
 		<h4 id="incorrect"></h4>
 		<h4 id="unanswered"></h4>
 	</section>
+
 	<footer>
 		Copyright @BobbyFraz 2017
 	</footer>
+<br>
 
 <script type="text/javascript" src="assets/javascript/app.js"></script>
 </body>

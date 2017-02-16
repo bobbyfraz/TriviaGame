@@ -6,13 +6,14 @@ var time = 120;
 var countdown;
 
 window.onload = function(){
-	$("#results").hide();
 	$("#trivia").hide();
 	$("#submitButton").hide();
+	$("#results").hide();
 }
 var start = function(){
 //	$("#startButton").prop("disabled",true);
 	$("#startButton").hide();
+	$("#instructions").hide();
 	$("#trivia").show();
 	$("#submitButton").show();
 	triviaTime();

@@ -9,15 +9,24 @@ window.onload = function(){
 	$("#trivia").hide();
 	$("#submitButton").hide();
 	$("#results").hide();
+//	$("#replayButton").hide();
 }
 var start = function(){
-//	$("#startButton").prop("disabled",true);
 	$("#startButton").hide();
 	$("#instructions").hide();
+	$("#timer").show();
 	$("#trivia").show();
 	$("#submitButton").show();
 	triviaTime();
 	countdown = setInterval(triviaTime,1000);
+	$(".incorrectAnswer").on("click", function(){
+	incorrect++;
+	unanswered--;
+	});
+	$(".correctAnswer").on("click", function(){
+	correct++;
+	unanswered--;
+	});
 };
 var triviaTime = function(){
 		time--;
@@ -48,12 +57,30 @@ var end = function(){
 	$("#unanswered").html("Unanswered: " + unanswered);
 };
 
+var restart = function(){
+	$("#trivia").hide();
+	$("#submitButton").hide();
+	$("#results").hide();
+	//$("#trivia").attr("checked" = false);
+	correct = 0;
+	incorrect = 0;
+	unanswered = 5;
+	time = 120;
+	start();
+};
+
 $("#startButton").on("click", function(){
 	start();
 });
 $("#submitButton").on("click", function(){
 	end();
 });
+$("#replayButton").on("click", function(){
+	restart();
+});
+
+//put this in the submit button function
+/*
 $(".incorrectAnswer").on("click", function(){
 	incorrect++;
 	unanswered--;
@@ -62,3 +89,4 @@ $(".correctAnswer").on("click", function(){
 	correct++;
 	unanswered--;
 });
+*/

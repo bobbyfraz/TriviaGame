@@ -6,24 +6,25 @@ body{
 h1{
 	background-color: #dc143c;
 	padding: 10px 0px 10px 0px;
+	font-weight: bold;
 }
 h3{
 	background-color: #dc143c;
 }
 #instructions{
 	background-color: #dc143c;
-	padding: 10px 0px 10px 0px;
+	padding: 5px 0px 10px 0px;
 }
 #trivia{
 	background-color: #dc143c;
+	padding: 10px 0px 10px 0px;
 }
 footer{
 	background-color: #dc143c;
 	padding: 5px 0px 5px 0px;
+	font-weight: bold;
 }
 #results{
 	background-color: #e6e600;
 	padding: 10px 0px 10px 0px;
 }
-
-#q1a1, #q1a2, #q1a3, #q1a4, #q2a1, #q2a2, #q2a3, #q2a4, #q3a1, #q3a2, #q3a3, #q3a4, #q4a1, #q4a2, #q4a3, #q4a4, #q5a1, #q5a2, #q5a3, #q5a4:focus{color: #ffffff; background-color: #0000e6;}

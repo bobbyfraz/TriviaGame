@@ -10,63 +10,105 @@
 <body class="container">
 
 	<br>
-	<h1>SUPER HERO TRIVIA!!</h1>
-	<section id="instructions">
-		<h3>You will have 120 seconds to answer the trivia questions about various super heros.  After you are done or after the timer runs out your answers will be counted and you will be given your final score.</h3>
+	<section class="row">
+		<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3"></div>
+		<h1 class="col-xs-6 col-sm-6 col-md-6 col-lg-6">SUPER HERO TRIVIA!!</h1>
 	</section>
-	<h3><button id="startButton" class="btn btn-default">Start!</button></h3>
-
-	<h3 id="timer"></h3>
-	<section id="trivia">
-		<h4 id="batman">1. Batman!</h4>
-			<h4 id="q1">What is Batman's alter ego?</h4>
-				<button class="incorrectAnswer" class="btn btn-default" id="q1a1">A.  Bruce Banner</button>
-				<button class="incorrectAnswer" class="btn btn-default" id="q1a2">B.  Tony Stark</button>
-				<button class="correctAnswer" class="btn btn-default" id="q1a3">C.  Bruce Wayne</button>
-				<button class="incorrectAnswer" class="btn btn-default" id="q1a4">D.  Steve Rogerss</button>
-		<br>
-		<h4 id="captainamerica">2. Captain America!</h4>
-			<h4 id="q2">What year did Captain America receive his abilities?</h4>
-				<button class="incorrectAnswer" class="btn btn-default" id="q2a1">A.  1939</button>
-				<button class="correctAnswer" class="btn btn-default" id="q2a2">B.  1941</button>
-				<button class="incorrectAnswer" class="btn btn-default" id="q2a3">C.  1943</button>
-				<button class="incorrectAnswer" class="btn btn-default" id="q2a4">D.  1945</button>
-		<br>
-		<h4 id="ironman">3. Iron Man!</h4>
-			<h4 id="q3">Where did Iron Man go to college?</h4>
-				<button class="incorrectAnswer" class="btn btn-default" id="q3a1">A.  Harvard University</button>
-				<button class="incorrectAnswer" class="btn btn-default" id="q3a2">B.  Stanford University</button>
-				<button class="incorrectAnswer" class="btn btn-default" id="q3a3">C.  Princeton University</button>
-				<button class="correctAnswer" class="btn btn-default" id="q3a4">D.  M.I.T.</button>
-		<br>
-		<h4 id="wolverine">4. Wolverine!</h4>
-			<h4 id="q4">What type of metal is Wolverine's skeleton and claws made out of?</h4>
-				<button class="correctAnswer" class="btn btn-default" id="q4a1">A.  Adamantium</button>
-				<button class="incorrectAnswer" class="btn btn-default" id="q4a2">B.  Aluminum</button>
-				<button class="incorrectAnswer" class="btn btn-default" id="q4a3">C.  Iron</button>
-				<button class="incorrectAnswer" class="btn btn-default" id="q4a4">D.  Steel</button>
-		<br>
-		<h4 id="spyderman">5. Styderman!</h4>
-			<h4 id="q5">What city is Spyderman from?</h4>
-				<button class="incorrectAnswer" class="btn btn-default" id="q5a1">A.  Brooklyn</button>
-				<button class="incorrectAnswer" class="btn btn-default" id="q5a2">B.  Bronx</button>
-				<button class="correctAnswer" class="btn btn-default" id="q5a3">C.  Queens</button>
-				<button class="incorrectAnswer" class="btn btn-default" id="q5a4">D.  Manhattan</button>
+	<section class="row">
+		<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2"></div>
+		<div class="col-xs-8 col-sm-8 col-md-8 col-lg-8" id="instructions">
+			<h3>You will have 120 seconds to answer the trivia questions about various super heros.  After you are done or after the timer runs out your answers will be counted and you will be given your final score.</h3>
+		</div>
 	</section>
-	<h3><button id="submitButton" class="btn btn-default">Submit!</button></h3>
+	<section class="row">
+		<div class="col-xs-5 col-sm-5 col-md-5 col-lg-5"></div>
+		<h3 class="col-xs-2 col-sm-2 col-md-2 col-lg-2"><button id="startButton" class="btn btn-default">Start!</button></h3>
+	</section>
 
-	<section id="results">
-		<h4 id="done">ALL DONE!!!</h4>
-		<hr>
-		<h4 id="correct"></h4>
-		<h4 id="incorrect"></h4>
-		<h4 id="unanswered"></h4>
+	<section class="row">
+		<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"></div>
+		<section class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+			<h3 id="timer"></h3>
+		</section>
+	</section>
+
+
+	<section class="row">
+		<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2"></div>
+		<section class="col-xs-8 col-sm-8 col-md-8 col-lg-8" id="trivia">
+		<form>
+			<h4 id="batman">1. Batman!</h4>
+				<h4 id="q1">What is Batman's alter ego?</h4>
+					<input type="radio" name="choices" class="incorrectAnswer" id="q1a1"><span>A.  Bruce Banner</span>
+					<input type="radio" name="choices" class="incorrectAnswer" id="q1a2"><span>B.  Tony Stark</span>
+					<input type="radio" name="choices" class="correctAnswer" id="q1a3"><span>C.  Bruce Wayne</span>
+					<input type="radio" name="choices" class="incorrectAnswer" id="q1a4"><span>D.  Steve Rogers</button>
+		</form>
+			<br>
+		<form>
+			<h4 id="captainamerica">2. Captain America!</h4>
+				<h4 id="q2">What year did Captain America receive his abilities?</h4>
+					<input type="radio" name="choices" class="incorrectAnswer" id="q2a1"><span>A.  1939</span>
+					<input type="radio" name="choices" class="correctAnswer" id="q2a2"><span>B.  1941</span>
+					<input type="radio" name="choices" class="incorrectAnswer" id="q2a3"><span>C.  1943</span>
+					<input type="radio" name="choices" class="incorrectAnswer" id="q2a4"><span>D.  1945</span>
+		</form>
+			<br>
+		<form>
+			<h4 id="ironman">3. Iron Man!</h4>
+				<h4 id="q3">Where did Iron Man go to college?</h4>
+					<input type="radio" name="choices" class="incorrectAnswer" id="q3a1"><span>A.  Harvard University</span>
+					<input type="radio" name="choices" class="incorrectAnswer" id="q3a2"><span>B.  Stanford University</span>
+					<input type="radio" name="choices" class="incorrectAnswer" id="q3a3"><span>C.  Princeton University</span>
+					<input type="radio" name="choices" class="correctAnswer" id="q3a4"><span>D.  M.I.T.</span>
+		</form>
+			<br>
+		<form>
+			<h4 id="wolverine">4. Wolverine!</h4>
+				<h4 id="q4">What type of metal is Wolverine's skeleton and claws made out of?</h4>
+					<input type="radio" name="choices" class="correctAnswer" id="q4a1"><span>A.  Adamantium</span>
+					<input type="radio" name="choices" class="incorrectAnswer" id="q4a2"><span>B.  Aluminum</span>
+					<input type="radio" name="choices" class="incorrectAnswer" id="q4a3"><span>C.  Iron</span>
+					<input type="radio" name="choices" class="incorrectAnswer" id="q4a4"><span>D.  Steel</span>
+		</form>
+			<br>
+		<form>
+			<h4 id="spyderman">5. Spyderman!</h4>
+				<h4 id="q5">What city is Spyderman from?</h4>
+					<input type="radio" name="choices" class="incorrectAnswer" id="q5a1"><span>A.  Brooklyn</span>
+					<input type="radio" name="choices" class="incorrectAnswer" id="q5a2"><span>B.  Bronx</span>
+					<input type="radio" name="choices" class="correctAnswer" id="q5a3"><span>C.  Queens</span>
+					<input type="radio" name="choices" class="incorrectAnswer" id="q5a4"><span>D.  Manhattan</span>
+		</form>
+		</section>
+	</section>
+
+
+	<section class="row">
+		<div class="col-xs-5 col-sm-5 col-md-5 col-lg-5"></div>
+		<h3 class="col-xs-2 col-sm-2 col-md-2 col-lg-2"><button id="submitButton" class="btn btn-default">Submit!</button></h3>
+	</section>
+
+	<section class="row">
+		<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3"></div>
+		<section class="col-xs-6 col-sm-6 col-md-6 col-lg-6" id="results">
+			<h4 id="done">ALL DONE!!!</h4>
+			<hr>
+			<h4 id="correct"></h4>
+			<h4 id="incorrect"></h4>
+			<h4 id="unanswered"></h4>
+			<hr>
+			<button id="replayButton" class="btn btn-default">Play Again</button>
+		</section>
 	</section>
 
 <br>
-	<footer>
-		Copyright @BobbyFraz 2017
-	</footer>
+	<section class="row">
+		<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3"></div>
+		<footer class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+			Copyright @BobbyFraz 2017
+		</footer>
+	</section>
 <br>
 
 <script type="text/javascript" src="assets/javascript/app.js"></script>

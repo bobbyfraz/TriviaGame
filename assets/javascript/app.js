@@ -69,12 +69,11 @@ $("#submitButton").on("click", function(){
 $("#replayButton").on("click", function(){
 	restart();
 });
-$(".incorrectAnswer").on("click", function(){
-	incorrect++;
-	unanswered--;
+$(".incorrectAnswer").on("change", function(){
+		incorrect++;
+		unanswered--;
 });
-$(".correctAnswer").on("click", function(){
-	correct++;
-	unanswered--;
+$(".correctAnswer").on("change", function(){
+		correct++;
+		unanswered--;
 });
-
